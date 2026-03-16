@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student>
+    <id>101</id>
+    <name>John Doe</name>
+    <age>22</age>
+    <gpa>3.8</gpa>
+    <isInternational>true</isInternational>
+    <gradeLevel>A</gradeLevel>
+    <subjects>
+        <subject>Mathematics</subject>
+        <subject>Physics</subject>
+        <subject>Chemistry</subject>
+        <subject>Biology</subject>
+        <subject>History</subject>
+        <subject>Geography</subject>
+        <subject>Literature</subject>
+        <subject>Computer Science</subject>
+        <subject>Art</subject>
+        <subject>Physical Education</subject>
+    </subjects>
+</student>

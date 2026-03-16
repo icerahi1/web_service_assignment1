@@ -1,0 +1,9 @@
+<!ELEMENT student (id, name, age, gpa, isInternational, gradeLevel, subjects)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT gpa (#PCDATA)>
+        <!ELEMENT isInternational (#PCDATA)>
+        <!ELEMENT gradeLevel (#PCDATA)>
+        <!ELEMENT subjects (subject+)>
+        <!ELEMENT subject (#PCDATA)>
