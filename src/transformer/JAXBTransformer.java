@@ -8,17 +8,10 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import java.io.File;
 
-/**
- * Handles marshaling and unmarshaling of Student objects using JAXB.
- */
+//marshaling and unmarshaling of Student objects using JAXB.
 public class JAXBTransformer {
 
-    /**
-     * Transforms a POJO to an XML file.
-     * @param student The student object.
-     * @param file The output XML file.
-     * @throws JAXBException if marshaling fails.
-     */
+  //Transforms a POJO to an XML file.
     public void transformToXML(Student student, File file) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Student.class);
         Marshaller marshaller = context.createMarshaller();
@@ -28,13 +21,8 @@ public class JAXBTransformer {
         marshaller.marshal(student, System.out);
     }
 
-    /**
-     * Transforms an XML file to a POJO with XSD validation.
-     * @param file The input XML file.
-     * @return The unmarshaled Student object.
-     * @throws JAXBException if unmarshaling fails.
-     * @throws SAXException if XSD schema processing fails.
-     */
+//transforms an XML file to a POJO with XSD validation.
+
     public Student transformToPOJO(File file) throws JAXBException, SAXException {
         JAXBContext context = JAXBContext.newInstance(Student.class);
         Unmarshaller unmarshaller = context.createUnmarshaller();

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE student SYSTEM "src/resources/student.dtd">
 <student>
-    <id>101</id>
-    <name>John Doe</name>
+    <id>102</id>
+    <name>Imran</name>
     <age>22</age>
     <gpa>3.8</gpa>
     <isInternational>true</isInternational>

@@ -25,7 +25,7 @@ public class DbManager {
 
     public void saveStudent(Student student) {
         // SQL command to insert data
-        String insertSQL = "INSERT INTO students (id, name, age, gpa) VALUES (?, ?, ?, ?)";
+        String insertSQL = "INSERT OR REPLACE INTO students (id,name, age, gpa) VALUES (?, ?, ?, ?)";
 
         try (Connection conn = DriverManager.getConnection(DB_URL);
              PreparedStatement pstmt = conn.prepareStatement(insertSQL)) {

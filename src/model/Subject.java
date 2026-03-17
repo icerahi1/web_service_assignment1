@@ -8,13 +8,10 @@ public class Subject {
     @XmlValue
     private String name;
 
-
     public Subject(){} //required for JAXB
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }

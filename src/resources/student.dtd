@@ -1,4 +1,4 @@
-<!ELEMENT student (id, name, age, gpa, isInternational, gradeLevel, subjects)>
+<!ELEMENT student ( id,name, age, gpa, isInternational, gradeLevel, subjects)>
         <!ELEMENT id (#PCDATA)>
         <!ELEMENT name (#PCDATA)>
         <!ELEMENT age (#PCDATA)>

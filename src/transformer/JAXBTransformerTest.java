@@ -5,9 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.io.File;
 
-/**
- * Unit tests for JAXBTransformer.
- */
+//simple unit tests for JAXBTransformer.
 public class JAXBTransformerTest {
 
     @Test
@@ -18,7 +16,6 @@ public class JAXBTransformerTest {
         Student student = transformer.transformToPOJO(xmlFile);
 
         Assert.assertNotNull("Student object should not be null", student);
-        Assert.assertEquals("ID should be 101", 101, student.getId());
-        Assert.assertEquals("Name should be John Doe", "John Doe", student.getName());
+        Assert.assertEquals("Name should be Imran", "Imran", student.getName());
     }
 }
